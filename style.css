@@ -186,10 +186,12 @@ h1 {
   }
 
   .slider {
-    width: 400px;
-    height: 275px;
+    transform: translateY(50px);
   }
 
+  .cercles {
+    margin-bottom: 0px;
+  }
   .commandes button:nth-child(1){
     top: -10%;
     left: 50%;
