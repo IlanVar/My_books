@@ -1,0 +1,222 @@
+*, ::before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --color1: rgb(202, 155, 224);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(52, 54, 58);
+  min-width: 900px;
+}
+
+.instagram {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4px;
+  padding-right: 7px;
+}
+
+.section {
+  width: 280px;
+  height: auto;
+  padding: 30px 40px 30px 40px;
+  overflow: auto;
+  min-width: 360;
+  border-radius: 50%;
+  margin-top: 25px; 
+  background-color: white;
+}
+
+.section img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+h1 {
+  color: var(--color1);
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 85px;
+  position: relative;
+}
+
+.presentation {
+  margin: 20px 0px;
+  margin-top: 0;
+  padding: 20px;
+  line-height: 35px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  border-top: #e0e0e0 solid 5px;
+  border-bottom: #e0e0e0 solid 5px;
+}
+
+.presentation a {
+  color: var(--color1);
+  text-decoration: none;
+}
+
+.slider {
+  width: auto;
+  height: 600px;
+  margin: 60px 50%;
+  transform: translate(-50%);
+  position: absolute;
+}
+
+.slider canvas {
+  position: absolute;
+  display: block;
+}
+
+.cont-slides {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.cont-slides img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  border-radius: 20px;
+  margin: 10px 50%;
+  transform: translate(-50%);
+}
+
+.cont-slides a {
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.disable {
+  pointer-events: none;
+  cursor: default
+}
+
+.commandes button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+
+.commandes img {
+  width: 15px;
+  position: relative;
+}
+
+.commandes:hover button {
+  background-color: #e0e0e0
+}
+
+.commandes button:nth-child(1){
+  top: -5%;
+  left: 50%;
+  transform: translate(-150px, -50%);
+}
+
+.commandes button:nth-child(2){
+  top: -5%;
+  right: 50%;
+  transform: translate(150px, -50%);
+}
+
+.commandes button:nth-child(1) img {
+  left: -2px;
+}
+
+.commandes button:nth-child(2) img {
+  right: -2px;
+}
+
+.cercles {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cercle {
+  width: 20px;
+  height: 50%;
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+  outline: none;
+  background:  rgb(196, 196, 196);
+}
+
+.active-circle {
+  background: var(--color1);
+}
+
+.active {
+  opacity: 1!important;
+}
+
+@media only screen and (max-width: 700px){
+  .body {
+    min-width: 400px;
+  }
+
+  .slider {
+    width: 400px;
+    height: 275px;
+  }
+
+  .commandes button:nth-child(1){
+    top: -10%;
+    left: 50%;
+    transform: translate(-150px,);
+  }
+  
+  .commandes button:nth-child(2){
+    right: 50%;
+    top: -10%;
+    transform: translate(150px,);
+  }
+
+  .cercles {
+    top: -10%;
+    margin-bottom: 30px;
+  }
+
+  .presentation {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  h1 {
+    color: var(--color1);
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    position: relative;
+  }
+}

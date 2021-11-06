@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(46, 46, 46);
+}
+
+/* book */
+.book {
+
+    position: relative;
+    width: 800px;
+    height: 0;
+    transition: transform 2s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.paper img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 2s;
+}
+
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back{
+    transform: rotateY(-180deg);
+}
+
+/* button */
+.commandes button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+    transition: transform 2s;
+  }
+  
+.commandes img {
+width: 15px;
+position: relative;
+}
+
+.btn-left {
+transform: translate(-2px);
+}
+
+.btn-right {
+transform: translate(2px);
+}
+
+.commandes:focus button {
+    outline: none
+}
+
+.commandes:hover button {
+    background-color: #e0e0e0
+}
+
+@media only screen and (max-width: 1000px){
+    .book {
+        width: 400px;
+    }
+  }
