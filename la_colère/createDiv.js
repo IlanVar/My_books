@@ -1,4 +1,4 @@
-const numOfPapers = Number(13);
+const numOfPapers = Number(11);
 
 function createDiv(){
     for (let index = 1; index <= numOfPapers; index++) {
