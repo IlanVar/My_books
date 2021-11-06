@@ -113,6 +113,6 @@ transform: translate(2px);
 
 @media only screen and (max-width: 1000px){
     .book {
-        width: 400px;
+        width: 300px;
     }
   }

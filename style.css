@@ -16,7 +16,8 @@ body {
 
 .instagram {
   text-align: center;
-  margin-left: auto;
+  margin-left: 50%;
+  transform: translate(-50%);
   margin-right: auto;
   padding-top: 4px;
   padding-right: 7px;

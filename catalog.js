@@ -23,9 +23,9 @@ function openBook() {
     book.style.transform = "translateX(50%)";
     prevBtn.style.transform = "translateX(-400px)"
     nextBtn.style.transform = "translateX(400px)"
-    if(book.clientWidth < 800){prevBtn.style.transform = "translateX(-200px)"}
+    if(book.clientWidth < 800){prevBtn.style.transform = "translateX(-170px)"}
     else{prevBtn.style.transform = "translateX(-400px)"}
-    if(book.clientWidth < 800){nextBtn.style.transform = "translateX(200px)"}
+    if(book.clientWidth < 800){nextBtn.style.transform = "translateX(170px)"}
     else{nextBtn.style.transform = "translateX(400px)"}
 }
 
