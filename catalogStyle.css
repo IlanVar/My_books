@@ -111,8 +111,15 @@ transform: translate(2px);
     background-color: #e0e0e0
 }
 
+@media only screen and (max-width: 1900px){
+    .book {
+        width: 600px;
+    }
+}
+
 @media only screen and (max-width: 1000px){
     .book {
         width: 300px;
     }
   }
+

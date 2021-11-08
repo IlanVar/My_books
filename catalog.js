@@ -21,12 +21,12 @@ for (let i = 0; i <= numOfPapers; i++) {
 
 function openBook() {
     book.style.transform = "translateX(50%)";
-    prevBtn.style.transform = "translateX(-400px)"
-    nextBtn.style.transform = "translateX(400px)"
-    if(book.clientWidth < 800){prevBtn.style.transform = "translateX(-145px)"}
-    else{prevBtn.style.transform = "translateX(-400px)"}
-    if(book.clientWidth < 800){nextBtn.style.transform = "translateX(145px)"}
-    else{nextBtn.style.transform = "translateX(400px)"}
+    if(book.clientWidth == 800){prevBtn.style.transform = "translateX(-400px)"}
+    if(book.clientWidth == 600){prevBtn.style.transform = "translateX(-300px)"}
+    if(book.clientWidth == 300){prevBtn.style.transform = "translateX(-145px)"}
+    if(book.clientWidth == 800){nextBtn.style.transform = "translateX(400px)"}
+    if(book.clientWidth == 600){nextBtn.style.transform = "translateX(300px)"}
+    if(book.clientWidth == 300){nextBtn.style.transform = "translateX(145px)"}
 }
 
 function closeBook(isAtBeginning) {
